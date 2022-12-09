@@ -1,55 +1,59 @@
 :host{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  .pokemon{
-    flex-wrap: wrap;
+  .listagem{
     display: flex;
-    background: var(--primary-color);
-    opacity: .75;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-    width: 49%;
-    border-radius: 10px;
-    margin: 7px;
-    padding: 7px;
+    .pokemon{
+      display: flex;
+      background: var(--primary-color);
+      opacity: .75;
 
-    &__status{
-      h2{
+      width: 49%;
+      border-radius: 10px;
+      margin: 7px;
+      padding: 7px;
+
+      text-decoration: none;
+      color: #000;
+
+      &__status{
+        h2{
+          display: flex;
+          justify-content: space-between;
+          font-size: 20px;
+          font-weight: 300;
+        }
+
+        ul{
+          display: flex;
+          flex-direction: column;
+
+        li{
+          text-align: center;
+          background: var(--secondary-color);
+          border-radius: 10px;
+          margin: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        }
+      }
+      &__image{
         display: flex;
         justify-content: space-between;
-        font-size: 20px;
-        font-weight: 300;
+        align-items: center;
+        background: url(../../../assets/pokeball-back.svg);
+        background-repeat: no-repeat;
       }
-
-      ul{
+      img{
         display: flex;
-        flex-direction: column;
-
-      li{
-        text-align: center;
-        background: var(--secondary-color);
-        border-radius: 10px;
-        margin: 5px;
-        display: flex;
-        justify-content: center;
+        width: 80px;
+        height: 80px;
         align-items: center;
       }
-      }
-    }
-    &__image{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: url(../../../assets/pokeball-back.svg);
-      background-repeat: no-repeat;
-    }
-    img{
-      display: flex;
-      width: 60px;
-      height: 60px;
-      align-items: center;
-    }
 
+    }
   }
 }

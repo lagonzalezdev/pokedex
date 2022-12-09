@@ -1,18 +1,25 @@
+<ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
 <a class="pokemon">
   <section class="pokemon__status">
       <h2>
-      Butterfly
+      {{pokemon.name}}
       </h2>
-      <h2>
-        #012
+      <h2 *ngFor="let value of pokemon.order">
+        {{value.order.name}}
       </h2>
       <ul>
-        <li>bug</li>
-        <li>flying</li>
+        <li *ngFor="let value of pokemon.status.types">
+        {{value.type.name}}
+      </li>
       </ul>
   </section>
+
   <section class="pokemon__image">
-    <img src="assets/butterfly.png" alt="Butterfly">
+    <img
+      [src]="pokemon.status.sprites.other.dream_world.front_default"
+      [alt]="pokemon.name"
+    >
   </section>
 </a>
+</ng-template>
 

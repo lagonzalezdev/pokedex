@@ -1,0 +1,26 @@
+:host{
+  .pokemon{
+    display: flex;
+    background: rgb(248, 237, 145, 0.75);
+
+    width: 49%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+
+    &__status{
+      h2{
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      ul{
+        display: flex;
+        flex-direction: column;
+
+       
+      }
+    }
+
+  }
+}

@@ -1,2 +1,14 @@
-::host{}
+
+
+:host{
+  header{
+    background-color: rgba(155,192,86,0.75) ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 5px 10px;
+  }
+}
 

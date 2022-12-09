@@ -1,10 +1,11 @@
-@use './config-scss/variables.scss';
-@use './config-scss/reset.scss';
-@use './config-scss/rem-calc.scss';
+@import './config-scss/variables.scss';
+@import './config-scss/reset.scss';
+@import './config-scss/rem-calc.scss';
 
 html{
   font-family: 'VT323', monospace;
   background-image: url(./assets/images/fondo_1.png);
+  background-color: rgb(47, 90, 65);
 }
 main{
   max-width: 600px;

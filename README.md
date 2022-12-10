@@ -1,5 +1,11 @@
 # Pokedex
 
+Este proyecto esta construido con el framework Angular, el resultado esperado es tener una Pokédex usando los recursos de JavaScript, conexión con Api, scss, entre otros
+
+## Autor
+LaGonzalezDev
+
+______________________________________
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
 
 ## Development server
